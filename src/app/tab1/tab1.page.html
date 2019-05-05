@@ -1,0 +1,60 @@
+ <!--1803518 Annemari Mustonen Personal information and home page for the application --> 
+
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>
+      CV Application of Annemari Mustonen
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button>
+            </ion-menu-button>
+          </ion-buttons>
+          <ion-title>My personal information</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+ <!-- Basic text in a card -->       
+      <ion-card class="welcome-card">
+          <ion-card-header color="secondary">
+            <ion-card-title>Personal Profile of Annemari Mustonen</ion-card-title>
+            <ion-card-subtitle>Computer and mobile app programmer</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Hello, I am Annemari Mustonen, a 32-year old computer programmer from Finland currently studying mobile app development and programming. This App is part of my studies.</p>
+          </ion-card-content>
+        </ion-card>
+
+         <!-- Calendar in a card component --> 
+        <ion-card>
+          <ion-card-header color="secondary">
+            <ion-card-title>Calendar</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ionic-calendar-date-picker [notInCalendarStyle]="{'color': 'red', 'font-weight': 'bold'}"></ionic-calendar-date-picker>
+          </ion-card-content>
+        </ion-card>
+
+ <!--Side menu link information -->         
+        <ion-content>
+          <ion-list>
+          <ion-item>
+            <ion-icon name="Personal Information" slot="start"></ion-icon>
+          </ion-item>
+        </ion-list>
+</ion-content>
+
+ <!--Log out link --> 
+</ion-content>
+<ion-footer (click)="logout()">
+  <ion-toolbar color="secondary">
+    <ion-title>Click here to Log out</ion-title>
+  </ion-toolbar>
+</ion-footer>
+
