@@ -1,6 +1,8 @@
 {
   "name": "CVAppTabs",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "80fdf34c"
 }

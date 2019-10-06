@@ -1,4 +1,4 @@
-// 1803518 Annemari Mustonen
+// 0702280 Annemari Mustonen
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -43,33 +43,6 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: '../tab4/tab4.module#Tab4PageModule'
-          }
-        ]
-      },
-      {
-        path: 'tab5',
-        children: [
-          {
-            path: '',
-            loadChildren: '../tab5/tab5.module#Tab5PageModule'
-          }
-        ]
-      },
-      {
-        path: 'tab6',
-        children: [
-          {
-            path: '',
-            loadChildren: '../tab6/tab6.module#Tab6PageModule'
-          }
-        ]
-      },
-      {
-        path: 'tab7',
-        children: [
-          {
-            path: '',
-            loadChildren: '../tab7/tab7.module#Tab7PageModule'
           }
         ]
       },
